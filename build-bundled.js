@@ -13,7 +13,8 @@ const providerDirs = fs
     (dirent) =>
       dirent.isDirectory() &&
       !dirent.name.startsWith(".") &&
-      dirent.name !== "extractors",
+      dirent.name !== "extractors" &&
+      dirent.name !== "OLD",
   )
   .map((dirent) => dirent.name);
 
